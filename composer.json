@@ -5,11 +5,6 @@
     "flarum",
     "linkpreview"
   ],
-  "conflict":
-    {
-      "the-turk/flarum-ext-fancybox": ">=0.1-beta",
-      "squeevee/flarum-ext-fancybox": ">=0.1-beta"
-    },
   "type": "flarum-extension",
   "license": "GPL-3.0-or-later",
   "require": {
@@ -38,8 +33,8 @@
         }
     },
     "support": {
-        "issues": "https://github.com/malago86/flarum-ext-fancybox/issues",
-        "source": "https://github.com/malago86/flarum-ext-fancybox"
+        "issues": "https://github.com/malago86/flarum-linkpreview/issues",
+        "source": "https://github.com/malago86/flarum-inkpreview"
     }
   }
 }
