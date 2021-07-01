@@ -16,7 +16,7 @@ app.initializers.add('malago-livepreview', app => {
   extend(CommentPost.prototype, 'oncreate', function (x, isInitialized, context) {
     $(".Post-body").find('a').not(".linkpreview").each((i, e) => {
       var href = e.getAttribute("href");
-      console.log(href);
+
       e.classList.add("linkpreview");
       if (!e.text.startsWith("http")) return;
       var $s = $("<a>");
