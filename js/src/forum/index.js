@@ -33,13 +33,10 @@ app.initializers.add('malago-livepreview', app => {
         </div>\
       </div>\
     </div>');
-
-      var data = { key: app.forum.attribute("malago.linkpreview.key"), q: href };
       
-      fetch("https://api.linkpreview.net", {
-        method: "POST",
+      fetch(`https://meta-grabber.herokuapp.com?url=?{encodeURIComponent(href)}`, {
+        method: "GET",
         mode: "cors",
-        body: JSON.stringify(data)
       })
         .then((res) => res.json())
         .then((response) => {
