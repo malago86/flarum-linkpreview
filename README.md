@@ -4,7 +4,6 @@
 
 ## Features
 - Adds a card for links showing the title, description and icon.
-- It needs a token from [www.linkpreview.net](https://www.linkpreview.net/)
 
 ## Installation
 
