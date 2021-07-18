@@ -16,8 +16,6 @@ use Illuminate\Contracts\Events\Dispatcher;
 use Malago\LinkPreview\Api\Controllers;
 
 return [
-    (new Extend\Frontend('admin'))
-        ->js(__DIR__.'/js/dist/admin.js'),
     (new Extend\Frontend('forum'))
         ->js(__DIR__.'/js/dist/forum.js')
         ->css(__DIR__.'/less/forum.less'),

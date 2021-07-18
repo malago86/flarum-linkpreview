@@ -8,7 +8,6 @@ Thanks to [Justoverclock](https://discuss.flarum.org/u/Justoverclock) for the id
 
 ## Features
 - Adds a card for links showing the title, description and icon.
-- It needs a token from [www.linkpreview.net](https://www.linkpreview.net/)
 
 ![](https://i.ibb.co/N7b8C0s/unknown.png)
 
