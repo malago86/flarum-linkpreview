@@ -34,13 +34,14 @@ app.initializers.add('malago-livepreview', app => {
       </div>\
     </div>');
       
-      fetch(`https://meta-grabber.herokuapp.com?url=?{encodeURIComponent(href)}`, {
+      fetch(`https://meta-grabber.herokuapp.com?url=`+encodeURIComponent(href), {
         method: "GET",
         mode: "cors",
       })
         .then((res) => res.json())
         .then((response) => {
-          if (response.title != "") {
+          if (response.error === undefined && response.title != "") {
+            
             e.replaceWith($s[0]);
             $s.find(".livepreview-mytitle").html(response.title);
             $s.find(".livepreview-mydescription").html(response.description);

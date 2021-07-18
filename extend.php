@@ -20,8 +20,5 @@ return [
         ->js(__DIR__.'/js/dist/forum.js')
         ->css(__DIR__.'/less/forum.less'),
     (new Extend\Routes('api'))
-        ->get('/linkpreview', 'linkpreview.index', Controllers\GetLinkPreview::class),
-    (new Extend\Locales(__DIR__ . '/locale')),
-    (new Extend\Settings)
-        ->serializeToForum('malago.linkpreview.key', 'malago.linkpreview.key')
+        ->get('/linkpreview', 'linkpreview.index', Controllers\GetLinkPreview::class)
 ];
