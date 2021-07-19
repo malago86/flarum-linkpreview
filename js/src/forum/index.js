@@ -37,6 +37,7 @@ app.initializers.add('malago-livepreview', app => {
       fetch(`https://meta-grabber.herokuapp.com?url=`+encodeURIComponent(href), {
         method: "GET",
         mode: "cors",
+        credentials: "omit"
       })
         .then((res) => res.json())
         .then((response) => {
