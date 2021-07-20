@@ -4,8 +4,6 @@
 
 Thanks to [Justoverclock](https://discuss.flarum.org/u/Justoverclock) for the idea!
 
-**HELP WANTED**: The extension currently needs a token from a third party website and that service has limitations unless you pay for it. I am sure there is a way to do a small API point to do this within Flarum without having to rely on an external service. I could not find a way to do this myself but I am sure someone can help with this. If you want to collaborate, please contact me or feel free to fork the extension!
-
 ## Features
 - Adds a card for links showing the title, description and icon.
 
@@ -27,6 +25,10 @@ php flarum cache:clear
 ## Usage
 
 Enable the extension.
+
+## Technical notes
+
+This extension uses [Stylix58's](https://discuss.flarum.org/u/Stylix58) [meta grabber](https://github.com/Stylix58/meta-grabber).
 
 ## Links
 
